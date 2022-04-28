@@ -1,0 +1,11 @@
+<section class="cv-skills">
+  <article class="cv-skills-article">
+    <h2>Skills</h2>
+    <ul>
+      {{ range .Site.Data.skills.skills_list }}
+        <li>
+          {{ .name }} <progress class="cv-progress" value="{{ .level }}" max="10" />
+        </li>
+      {{ end }}
+  </article>
+</section>

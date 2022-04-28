@@ -1,0 +1,14 @@
+<section class="cv-awards">
+  <h2>Patents / Awards</h2>
+  <article class="cv-awards-article">
+    <dl>
+    {{ range .Site.Data.awards.awards_list }}
+      <dt class="dt-heading"></dt><dd class="dt-data"><img src="{{ .image }}"/></dd>
+      <dt class="dt-heading">Patent ID:</dt> <dd class="dt-data">{{ .id }}</dd>
+      <dt class="dt-heading">Description:</dt> <dd class="dt-data">{{ .description }}</dd>
+      <dt class="dt-heading">Issued:</dt> <dd class="dt-data">{{ .issued }}</dd>
+      <dt class="dt-heading"></dt><dd class="dt-data">{{ .url | safeHTML }}</dd>
+    {{ end }}
+    </dl>
+  </article>
+</section>

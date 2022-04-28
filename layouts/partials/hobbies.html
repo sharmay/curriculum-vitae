@@ -1,0 +1,10 @@
+<section class="cv-hobbies">
+  <article class="cv-hobbies-article">
+    <h2>Hobbies</h2>
+    <ul>
+      {{ range .Site.Data.hobbies.hobbies_list }}
+        <li>{{ .name }}</li>
+      {{ end }}
+    </ul>
+  </article>
+</section>

@@ -1,0 +1,10 @@
+<section class="cv-education">
+  <article class="cv-education-article">
+    <h2>Education</h2>
+    <ul>
+      {{ range .Site.Data.education.education_list }}
+        <li>{{ .degree }}</li>
+      {{ end }}
+    </ul>
+  </article>
+</section>

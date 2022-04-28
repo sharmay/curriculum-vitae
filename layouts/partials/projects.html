@@ -1,0 +1,12 @@
+<section class="cv-project">
+  <h2>Projects</h2>
+  {{ range .Site.Data.projects.projects_list }}
+    <article class="cv-project-article">
+      <h3>{{ .name }}</h3>
+      <h4>{{ .platform }}</h4>
+      <p class="cv-project-p">
+        {{ .description }}
+      </p>
+    </article>
+  {{ end }}
+</section>

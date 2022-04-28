@@ -1,0 +1,10 @@
+<section class="cv-contacts">
+  <article class="cv-contacts-article">
+    <h2>Contact</h2>
+    <ul>
+      {{ range .Site.Data.contacts.contacts_list }}
+        <li><a href="{{ .url }}">{{ .name }}</a><i class="{{ .icon_class }}"></i></li>
+      {{ end }}
+    </ul>
+  </article>
+</section>

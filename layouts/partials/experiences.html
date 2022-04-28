@@ -1,0 +1,11 @@
+<section class="cv-experience">
+  <h2>Work Experience</h2>
+  <article class="cv-experience-tl">
+    {{ range .Site.Data.experience.experience_list }}
+      <h3>{{ .year }}</h3>
+      <p class="cv-experience-tl-p">
+        {{ .title }} - {{ .summary }}
+      </p>
+    {{ end }}
+  </article>
+</section>

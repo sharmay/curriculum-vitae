@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+    {{- partial "header.html" . -}}
+    <main class="cv">
+      <div>
+        {{- partial "profile.html" . -}}
+        {{- partial "summary.html" . -}}
+        {{- partial "experiences.html" . -}}
+        {{- partial "projects.html" . -}}
+      </div>
+      <div>
+        {{- partial "contacts.html" . -}}
+        {{- partial "skills.html" . -}}
+        {{- partial "hobbies.html" . -}}
+        {{- partial "awards.html" . -}}
+        {{- partial "certifications.html" . -}}
+        {{- partial "education.html" . -}}
+      </div>
+    </main>
+    {{- partial "footer.html" . -}}
+    </body>
+</html>
+
